@@ -1,4 +1,5 @@
-from flask import Flask, request, jsonify, render_template_string,url_for
+from flask import Flask, request
+from flask import render_template_string,url_for
 import joblib
 import numpy as np
 import os
@@ -24,6 +25,7 @@ HTML_TEMPLATE = '''
 </body>
 </html>
 '''
+
 
 @app.route('/')
 def home():
